@@ -16,7 +16,16 @@
 
 
 
-  $("#btn-login").click(function(){
+  function login(){
+    var email = document.getElementById("email_id").value;
+    var password = document.getElementById("password_id").value;
+
+    window.alert(email + "" + password);
+
+  }
+
+
+  /*$("#btn-login").click(function(){
     var email = $("#email").val();
     var password = $("#password").val();
 
@@ -42,4 +51,4 @@
 
 
 
-  });
+  });*/
