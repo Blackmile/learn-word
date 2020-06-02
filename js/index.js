@@ -16,12 +16,33 @@
 
 
 
+  /*firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      // User is signed in.
+    } else {
+      // No user is signed in.
+    }
+  });*/
+
+
   function login(){
     var email = document.getElementById("email_id").value;
     var password = document.getElementById("password_id").value;
 
     window.alert(email + "" + password);
 
+
+
+    firebase.auth().SignInWithEmailAndPassword(email, password).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+
+
+      // ...
+    });
+
+    
   }
 
 
