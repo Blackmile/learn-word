@@ -10,9 +10,9 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();*/
+  firebase.analytics();
 
-  //firebase.auth.Auth.Persistence.SESSION;
+//firebase.auth.Auth.Persistence.SESSION;*/
 
 
 
@@ -24,23 +24,34 @@
     }
   });*/
 
+  const auth = firebase.auth();
+
+  function signup(){
+    var email = document.getElementById("email_id");
+    var password = document.getElementById("password_id");
+
+    const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
+    promise.catch(e => alert(e.message));
+
+    window.alert("signed in");
+  }
 
   function login(){
-    var email = document.getElementById("email_id").value;
-    var password = document.getElementById("password_id").value;
+    var email = document.getElementById("email_id");
+    var password = document.getElementById("password_id");
 
-    window.alert(email + "" + password);
+    const promise = auth.signInWithEmailAndPassword(email.value, password.value);
+    promise.catch(e => alert(e.message));
 
-
-
-    firebase.auth().SignInWithEmailAndPassword(email, password).catch(function(error) {
+    
+    /*firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
 
-
+      window.alert("Error : " + errorMessage);
       // ...
-    });
+    });*/
 
     
   }
