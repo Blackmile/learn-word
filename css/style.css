@@ -139,6 +139,7 @@ p {
 #showcase .showcase-content h1 {
   font-size: 60px;
   line-height: 1.2em;
+  color: #f7c08a;
 }
 
 #showcase .showcase-content p {
@@ -257,6 +258,11 @@ h2 .primary-text {
   margin: auto;
 }
 
+.container-login {
+  background: radial-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/Untitled-8.jpg') no-repeat center center/cover;
+  padding: 10px;
+}
+
 .form{
   position: relative;
   z-index: 1;
@@ -265,6 +271,7 @@ h2 .primary-text {
   margin: 0 auto 100px;
   padding: 45px;
   text-align: center;
+  opacity: 0.9;
 }
 
 .form input{
