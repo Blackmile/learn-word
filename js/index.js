@@ -1,17 +1,61 @@
+firebase.auth.Auth.Persistence.SESSION;
+
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
     console.log("true");
+    document.querySelector('#googleIn').style.display = 'none';
+    document.querySelector('#googleout').style.display;
+    window.location.assign("../landing_page.html")
   } else {
     // No user is signed in.
     console.log("false");
+    document.querySelector('#googleout').style.display = 'none';
+    document.querySelector('#googleIn').style.display;
+  }
+
+  if (user) {
+    //user is signed in redirect to landing page
+    
   }
 });
 
-function login() {
-  var userEmail = document.getElementById("email_id").value;
-  var userPassword = document.getElementById("password_id").value;
-
-  window.alert(userEmail+ " " + userPassword);
+function googleSignIn() {
+  var provider = new firebase.auth.GoogleAuthProvider();
+  
+  firebase.auth().signInWithPopup(provider).then(function(result) {
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    var token = result.credential.accessToken;
+    // The signed-in user info.
+    var user = result.user;
+    console.log("logged in");
+    console.log(user);
+    // ...
+  }).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    alert(errorMessage);
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
+  });
+  console.log("clicked");
 }
+
+function googleSignout() {
+  
+  firebase.auth().signOut().then(function() {
+    // Sign-out successful.
+    console.log('signed out');
+    window.location.assign('index.html')
+  }).catch(function(error) {
+    // An error happened.
+    console.log('error');
+  });
+};
+
+
 
