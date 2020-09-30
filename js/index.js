@@ -1,4 +1,4 @@
-firebase.auth().setPersistence(firebase.auth.Auth.Persistence.NONE)
+firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
 .then(function() {
   var provider = new firebase.auth.GoogleAuthProvider();
   // In memory persistence will be applied to the signed in Google user
