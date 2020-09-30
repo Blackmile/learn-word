@@ -1,4 +1,3 @@
-firebase.auth.Auth.Persistence.SESSION;
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
