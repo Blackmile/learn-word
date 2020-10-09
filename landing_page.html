@@ -1,82 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>learn word procesing &mdash; Website by Stanley Eze</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        
-        <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
-        <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all" >
-        <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" >
 
-        
-      </head>
-    <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <meta name="description" content="learning word processing is way easier to understanding in practice over theories">
+  <meta name="keywords" content="word processing, Ms word">
+  <!-- <meta name="robots" content="NOINDEX, NOFOLLOW"> -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <title>learn word procesing &mdash; Website by Stanley Eze</title>
+</head>
 
-      <div class="bgded overlay"> 
-        <!-- ############################################################################################### -->
-        <div class="wrapper row1"  id="mainav">
-          <header id="header" class="hoc clear"> 
-            <!-- ################################################################################################ -->
-            <div id="logo" class="fl_left">
-              <h1><a href="#">Learn word procesing</a></h1>
-            </div>
-            <nav class="fl_right">
-              <ul class="clear">
-                <li class="active"><a href="Overview.html">Overview</a></li>
-                <li><a class="drop" href="#">Start Tutorail</a>
-                  <ul>
-                    <li><a href="pages/gallery.html">Gallery</a></li>
-                    <li><a href="pages/full-width.html">Full Width</a></li>
-                    <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
-                    <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
-                    <li><a href="pages/basic-grid.html">Basic Grid</a></li>
-                  </ul>
-                </li>
-                <li><a href="../index.html">Logout</a>
-                  
-                </li>
-              </ul>
-            </nav>
-            <!-- ################################################################################################ -->
-          </header>
+<body>
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="dashboard"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#showcase">OverView</a></li>
+            <li><a href="#">PDFs</a></li>
+            <li><a href="#">Take a test</a></li>
+            <li><a id="googleout" class="btn" onclick="googleSignout()">Google sign out</a></li>
+          </ul>
         </div>
       </div>
-      <div class="container">
-        <h1>WELCOME !!!</h1>
-        <p>learn word processing the easy way...</br><em>And be an expert in it</em>.</p>
-        <p><a>Enroll Now</a></p>
+    </div>
+  </div>
 
-      </div>
+  <header id="showcase">
+    <div class="container showcase-container">
+      <h1>Let's Get Started !!</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam blanditiis molestiae voluptatem deleniti nihil omnis pariatur eum eius ipsa commodi.</p>
+      <a href="vidStream.html" class="btns">Start Lecture</a>
+    </div>
+  </header>
+  
+  
+ 
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyB4rtE6PMqXs2OItW1-uFLE9Ra81tQ0HFM",
+      authDomain: "reformed-b521d.firebaseapp.com",
+      databaseURL: "https://reformed-b521d.firebaseio.com",
+      projectId: "reformed-b521d",
+      storageBucket: "reformed-b521d.appspot.com",
+      messagingSenderId: "1092837700617",
+      appId: "1:1092837700617:web:388e6bbc08a2efc48bf4d8",
+      measurementId: "G-KR13PRXJPW"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <script src="./js/googleout.js"></script>
+</body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <script src="../js/index.js"></script>
-      <script>
-        firebase.auth().onAuthStateChanged(function(user){
-          if(user){
-            window.location.hef = "login_page.html";
-          }
-        });
-      </script>
-    </body>
 </html>
