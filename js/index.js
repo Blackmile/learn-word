@@ -4,7 +4,7 @@ firebase.auth().setPersistence(firebase.auth.Auth.Persistence.NONE)
   // In memory persistence will be applied to the signed in Google user
   // even though the persistence was set to 'none' and a page redirect
   // occurred.
-  return firebase.auth().signInWithRedirect(provider);
+  return firebase.auth().signInWithPopup(provider);
 })
 .catch(function(error) {
   // Handle Errors here.
