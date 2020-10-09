@@ -1,0 +1,120 @@
+/* video section */
+@media only screen and (max-width: 768px) {
+#video_player {
+    height: 100vh;
+    object-fit: contain;
+    padding: 10px;
+    background: rgb(105, 189, 144);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#myVideo{
+    width: 100%;
+    height: auto;
+}
+
+#vidNum {
+    float: right;
+}
+
+#playButtons {
+    display: flex;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.Next {
+    display: flex;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button{
+    width: 50em;
+}
+
+.btns  {
+    border: none;
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    transition: opacity 1s ease-in-out;
+    text-decoration: none;
+}
+.btns:hover {
+    background: #f7c08a;
+    color: #003c4d;
+}
+
+.show-stream {
+    background: rgb(105, 189, 144);
+    padding: 60px;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+@media only screen and (min-width: 767px) {
+    #video_player {
+        object-fit: contain;
+        padding: 60px;
+        background: rgb(105, 189, 144);
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #myVideo{
+        width: 931px;
+        height: 521px;
+        left: 0.301676px;
+        top: 0px;
+    }
+
+    #playButtons {
+        display: inline-block;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .Next {
+        display: block;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        float: right;
+    }
+
+    #btnNext {
+        float: right;
+    }
+
+    button {
+        width: fit-content;
+    }
+
+    .btns  {
+        border: none;
+        background: var(--secondary-color);
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        margin-top: 1rem;
+        transition: opacity 1s ease-in-out;
+        text-decoration: none;
+    }
+    .btns:hover {
+        background: #f7c08a;
+        color: #003c4d;
+    }
+
+    .show-stream {
+        padding: 20px;
+    }
+}

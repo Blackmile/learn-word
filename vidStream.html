@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <meta name="description" content="learning word processing is way easier to understanding in practice over theories">
+  <meta name="keywords" content="word processing, Ms word">
+  <!-- <meta name="robots" content="NOINDEX, NOFOLLOW"> -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/videoPlayer.css">
+  <!-- <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+  <title>learn word procesing &mdash; Website by Stanley Eze</title>
+</head>
+
+<body>
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="dashboard"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="landing_page.html">OverView</a></li>
+            <li><a href="#">PDFs</a></li>
+            <li><a href="#">Take a test</a></li>
+            <li><a id="googleout" class="btn" onclick="googleSignout()">Google sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="video_player">
+    <div class="show-stream">
+      <video id="myVideo">
+        <source src="./media/overview.mp4" type="video/mp4"/>
+      </video>
+      <!-- <output id="timeOut">Time: 0</output>      
+      <output id="vidNum">Video: 1/4</output> -->
+      <div id="playButtons">
+        <button id="btnPlay" class="btns">Play</button>
+        <button id="btnPause" class="btns">Pause</button>
+        <button id="btnStop" class="btns">Stop</button>
+      </div>
+      <div class="Next">
+        <button id="btnNext" class="btns">Next video</button>
+      </div>
+    </div>
+  </div>
+  <!-- <script src="https://vjs.zencdn.net/7.8.4/video.js"></script> -->
+  <script src="js/Vidstream.js"></script>
+  <script src="js/videoJs.js"></script>
+  
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyB4rtE6PMqXs2OItW1-uFLE9Ra81tQ0HFM",
+      authDomain: "reformed-b521d.firebaseapp.com",
+      databaseURL: "https://reformed-b521d.firebaseio.com",
+      projectId: "reformed-b521d",
+      storageBucket: "reformed-b521d.appspot.com",
+      messagingSenderId: "1092837700617",
+      appId: "1:1092837700617:web:388e6bbc08a2efc48bf4d8",
+      measurementId: "G-KR13PRXJPW"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <script src="./js/googleout.js"></script>
+</body>
+
+</html>
