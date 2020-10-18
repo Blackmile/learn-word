@@ -12,7 +12,7 @@ btnStop.addEventListener('click', vidAction);
 btnNext.addEventListener('click', nextVideo);
 myVideo.addEventListener('ended', vidEnded);
 
-const vids = ["overview.mp4", "bandicam 2020-05-10 15-07-50-777.mp4"]
+const vids = ["overview1.mp4", "bandicam 2020-05-10 15-07-50-777.mp4"]
 let vidPlaying = 0;
 
 function vidAction(event){
