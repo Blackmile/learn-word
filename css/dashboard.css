@@ -73,6 +73,7 @@ html,body {
 .btns:hover {
     background: #f7c08a;
     color: #003c4d;
+    cursor: pointer;
 }
 
 .btn  {
@@ -88,6 +89,7 @@ html,body {
 
 .btn:hover {
     opacity: 0.7;
+    cursor: pointer;
 }
 
 /* Menu */

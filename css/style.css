@@ -123,6 +123,7 @@ p {
 #navbar ul li a.current {
   background: #003c4d;
   color: #f7c08a;
+  cursor: pointer;
 }
 
 /* Showcase */

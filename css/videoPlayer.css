@@ -49,6 +49,7 @@ button{
 .btns:hover {
     background: #f7c08a;
     color: #003c4d;
+    cursor: pointer;
 }
 
 .show-stream {
@@ -77,14 +78,22 @@ button{
     }
 
     #playButtons {
-        display: inline-block;
+        display: inline-flex;
         padding: 10px;
         border: none;
         border-radius: 5px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
+
+    #vidNum {
+        float: right;
+    }
+    #timeOut {
+        display: grid;
+        float: left;
+    }
+
     .Next {
-        display: block;
         padding: 10px;
         border: none;
         border-radius: 5px;
@@ -112,6 +121,7 @@ button{
     .btns:hover {
         background: #f7c08a;
         color: #003c4d;
+        cursor: pointer;
     }
 
     .show-stream {
