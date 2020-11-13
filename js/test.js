@@ -91,7 +91,7 @@ function next() {
         firebase.database().ref('user/' + id).update({
             Time: (`${minutes} minutes and ${seconds} seconds`)
         });
-        clearInterval(myTime);
+        // clearInterval(myTime);
         location.href = "grade.html";
         return;
     }
