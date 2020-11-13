@@ -5,7 +5,7 @@ let minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
 
 let timex = 0;
 
-document.getElementById("nxt").onsubmit = function() {
+document.getElementById("nxt").onclick = function() {
     let myTime = setInterval(function () {
         if (seconds < 59) {
             seconds++;
