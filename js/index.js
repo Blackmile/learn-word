@@ -1,4 +1,7 @@
-firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
+function googleSignIn() {
+  var provider = new firebase.auth.GoogleAuthProvider();
+
+  firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
 .then(function() {
   var provider = new firebase.auth.GoogleAuthProvider();
   // In memory persistence will be applied to the signed in Google user
@@ -27,9 +30,6 @@ firebase.auth().onAuthStateChanged(function(user) {
     
   }
 });
-
-function googleSignIn() {
-  var provider = new firebase.auth.GoogleAuthProvider();
   
   firebase.auth().signInWithPopup(provider).then(function(result) {
     // This gives you a Google Access Token. You can use it to access the Google API.
