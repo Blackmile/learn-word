@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <link rel="stylesheet" href="/css/test.css">
+    <title>Your Score</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            <img src="https://img.icons8.com/bubbles/350/000000/medal.png" />
+            <h3 class="user-name">congratulations! <span class="name"></span></h3>
+            <p class="user-points">Your points: <span class="points"></span></p>
+            <p class="user-time">Time: <span class="time"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBPCikjoJF-QmDS1e33Y3NL9nuVmIT5ZyI",
+            authDomain: "form-dc841.firebaseapp.com",
+            databaseURL: "https://form-dc841.firebaseio.com",
+            projectId: "form-dc841",
+            storageBucket: "form-dc841.appspot.com",
+            messagingSenderId: "716333762852",
+            appId: "1:716333762852:web:8495978b6d51a20e6a0bb1"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="/js/userInfo.js"></script>
+</body>
+
+</html>

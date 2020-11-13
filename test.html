@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <link rel="stylesheet" href="./css/test.css">
+    <title>Test || stanley Eze</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="welcome_text">
+            <form class="welcome_form" onsubmit="submitForm(event)" name="welcome_form">
+                <input type="text" name="id" required placeholder="enter reg no">
+                <input type="text" name="name" required placeholder="enter name ">
+                <button id="nxt" type="submit">Start Test</button>
+            </form>
+        </div>
+    </div>
+    <section id="test">
+        <div class="wrapper">
+            <div class="test">
+                <div class="test_header">
+                    <div class="Tuser">
+                        <h4><span id="Qid"></span></h4>
+                    </div>
+                    <div class="Timer">
+                        <span class="time"></span>
+                    </div>
+                </div>
+                <div class="test_body">
+                    <div id="question">
+                    </div>
+                    <button class="next" onclick="next()">Next</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBPCikjoJF-QmDS1e33Y3NL9nuVmIT5ZyI",
+            authDomain: "form-dc841.firebaseapp.com",
+            databaseURL: "https://form-dc841.firebaseio.com",
+            projectId: "form-dc841",
+            storageBucket: "form-dc841.appspot.com",
+            messagingSenderId: "716333762852",
+            appId: "1:716333762852:web:8495978b6d51a20e6a0bb1"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="./js/test.js"></script>
+    <script src="./js/userInfo.js"></script>
+    <script src="./js/timer.js"></script>
+</body>
+
+</html>
