@@ -10,6 +10,7 @@
   <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="css/dashboard.css">
   <link rel="stylesheet" href="css/videoPlayer.css">
@@ -29,7 +30,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="landing_page.html">OverView</a></li>
             <li><a href="#">PDFs</a></li>
-            <li><a href="#">Take a test</a></li>
+            <li><a href="test.html">Take a test</a></li>
             <li><a id="googleout" class="btn" onclick="googleSignout()">Google sign out</a></li>
           </ul>
         </div>
@@ -43,8 +44,8 @@
       <video id="myVideo">
         <source src="./media/overview1.mp4" type="video/mp4"/>
       </video>
-      <!-- <output id="timeOut">Time: 0</output>      
-      <output id="vidNum">Video: 1/4</output> -->
+      <output id="timeOut">Time: 0</output>      
+      <output id="vidNum">Video: 1/4</output>
       <div id="playButtons">
         <button id="btnPlay" class="btns">Play</button>
         <button id="btnPause" class="btns">Pause</button>

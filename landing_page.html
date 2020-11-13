@@ -10,6 +10,7 @@
   <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="css/dashboard.css">
   <title>learn word procesing &mdash; Website by Stanley Eze</title>
@@ -26,7 +27,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="#showcase">OverView</a></li>
             <li><a href="#">PDFs</a></li>
-            <li><a href="#">Take a test</a></li>
+            <li><a href="test.html">Take a test</a></li>
             <li><a id="googleout" class="btn" onclick="googleSignout()">Google sign out</a></li>
           </ul>
         </div>
@@ -37,7 +38,14 @@
   <header id="showcase">
     <div class="container showcase-container">
       <h1>Let's Get Started !!</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam blanditiis molestiae voluptatem deleniti nihil omnis pariatur eum eius ipsa commodi.</p>
+      <p>The purpose of this application is to guide you through, on how to use Microsoft word for creating, editing, saving and formatting text documents.<br/> You can find the controls for the lectuer which includes:
+      <ol>
+        <li>Play Button</li>
+        <li>Pause Button</li>
+        <li>Stop Button</li>
+        <li>Next Button</li>
+      </ol></p>
+      <p>After the Lecture you can test your knowledge by clicking on the Test button in the dashboard</p>
       <a href="vidStream.html" class="btns">Start Lecture</a>
     </div>
   </header>
