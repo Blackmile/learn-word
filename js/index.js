@@ -16,14 +16,10 @@ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
     console.log("true");
-    document.querySelector('#googleIn').style.display = 'none';
-    document.querySelector('#googleout').style.display;
     window.location.assign("../landing_page.html")
   } else {
     // No user is signed in.
     console.log("false");
-    document.querySelector('#googleout').style.display = 'none';
-    document.querySelector('#googleIn').style.display;
   }
 
   if (user) {
