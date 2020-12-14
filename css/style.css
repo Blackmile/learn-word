@@ -163,7 +163,7 @@ p {
 
 /* Home info */
 #home-info {
-  height: 150vh;
+  height: 125vh;
 }
 
 #home-info .info-img {
@@ -179,7 +179,7 @@ p {
   height: 100%;
   text-align: center;
   padding: 50px 50px;
-  margin-top: 150px;
+  margin-top: 50px;
   overflow: hidden;
 }
 
@@ -192,16 +192,19 @@ h2 .primary-text {
 }
 
 /* features/Teachers */
+#features{
+  display: inline-block;
+}
 
 .box {
   float: left;
   width: 33.3%;
   padding: 30px;
   text-align: center;
-  /* transition: all 1s ease-in-out; */
+  transition: all 1s ease-in-out;
 }
 .box:hover{
-  /* transform: translateY(50px); */
+  transform: translateY(50px);
 }
 
 .box img {
