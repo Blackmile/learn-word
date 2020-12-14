@@ -89,41 +89,53 @@ p {
 .py-3 { padding: 30px 0; }
 
 /* Navbar */
-#navbar {
+.navbar {
   background: #003b1c;
   color: #fff;
   overflow: auto;
 }
 
-#navbar a {
+.navbar a {
   color: #fff;
 }
 
-#navbar .logo {
+.navbar .logo {
   float: left;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
-#navbar ul {
+.navbar ul {
   list-style: none;
   float: right;
 }
 
-#navbar ul li {
+.navbar ul li {
   float: left;
 }
 
-#navbar ul li a {
+.navbar ul li a {
   display: block;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
-#navbar ul li a:hover,
-#navbar ul li a.current {
-  background: #003c4d;
+.navbar ul li a:hover{
+  border-bottom: 2px solid #e67e22;
+}
+.navbar ul li a.current {
   color: #f7c08a;
   cursor: pointer;
+}
+/* stickyNav */
+.sticky{
+  background: none;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 2px 2px #475c4ab7;
+}
+.sticky .container{
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
 /* Showcase */
@@ -151,7 +163,7 @@ p {
 
 /* Home info */
 #home-info {
-  height: 400px;
+  height: 150vh;
 }
 
 #home-info .info-img {
@@ -166,7 +178,8 @@ p {
   width: 50%;
   height: 100%;
   text-align: center;
-  padding: 50px 30px;
+  padding: 50px 50px;
+  margin-top: 150px;
   overflow: hidden;
 }
 
@@ -185,6 +198,10 @@ h2 .primary-text {
   width: 33.3%;
   padding: 30px;
   text-align: center;
+  /* transition: all 1s ease-in-out; */
+}
+.box:hover{
+  /* transform: translateY(50px); */
 }
 
 .box img {
