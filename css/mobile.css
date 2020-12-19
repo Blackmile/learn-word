@@ -11,6 +11,10 @@
     font-size: 40px;
 }
 
+#showcase img{
+    width: 100% !important;
+}
+
 .navbar .logo {
     float: none;
     text-align: center;
