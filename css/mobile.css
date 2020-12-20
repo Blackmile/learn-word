@@ -26,8 +26,8 @@
 }
 
 .navbar ul li a {
-    padding: 5px;
-    border-bottom: #333 dotted 2px;
+    padding: 0px;
+    /* border-bottom: #333 dotted 2px; */
 }
 
 /* Home Info */

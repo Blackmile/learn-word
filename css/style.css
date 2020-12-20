@@ -10,11 +10,13 @@
 html,body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
+  background: radial-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/img_3.jpg') no-repeat center center/cover;;
 }
 
 a {
   color: #333;
   text-decoration: none;
+  cursor: pointer;
 }
 
 h1, h2, h3 {
@@ -28,9 +30,9 @@ p {
 /* Reuseable Classes */
 .container {
   margin: auto;
-  max-width: 1100px;
-  overflow: auto;
-  padding: 0 20px;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 10px;
 }
 
 .primary-text {
@@ -62,16 +64,16 @@ p {
 }
 
 .bg-dark {
-  background: #003b1c;
-  color: #fff;
+  background: #003b1c !important;
+  color: #fff !important;
 }
 .bg-light {
-  background: #f4f4f4;
-  color: #333;
+  background: #f4f4f4 !important;
+  color: #333 !important;
 }
 .bg-primary {
-  background: #f7c08a;
-  color: #003b1c;
+  background: #f7c08a !important;
+  color: #003b1c !important;
 }
 
 .clr {
@@ -90,9 +92,14 @@ p {
 
 /* Navbar */
 .navbar {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1999;
+  overflow: hidden;
+  padding: 0;
   background: #003b1c;
   color: #fff;
-  overflow: auto;
 }
 
 .navbar a {
@@ -100,13 +107,15 @@ p {
 }
 
 .navbar .logo {
+  font-size: 20px;
+  font-weight: 300;
   float: left;
   padding-top: 10px;
 }
 
 .navbar ul {
   list-style: none;
-  float: right;
+  /* float: right; */
 }
 
 .navbar ul li {
@@ -114,7 +123,7 @@ p {
 }
 
 .navbar ul li a {
-  display: block;
+  display: flex;
   padding: 10px;
   text-align: center;
 }
@@ -126,22 +135,38 @@ p {
   color: #f7c08a;
   cursor: pointer;
 }
+
+.navbar .container{
+  width: 100%;
+  padding: 0 0 !important;
+}
+
+.navbar-toggler{
+  color: #f2f2f2;
+  z-index: 1;
+}
+
 /* stickyNav */
 .sticky{
   background: none;
   position: fixed;
   width: 100%;
-  box-shadow: 0 2px 2px #475c4ab7;
-}
-.sticky .container{
-  background: rgba(0, 0, 0, 0.1);
+  top: 0px;
   z-index: 1;
+}
+.sticky a{
+  color: #f7c08a !important;
+}
+
+.navbar-toggler{
+  font-size: 150%;
+  cursor: pointer;
 }
 
 /* Showcase */
 #showcase {
-  background: radial-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/img_3.jpg') no-repeat center center/cover;
-  height: 600px;
+  margin-bottom: auto;
+  /* height: 600px; */
 }
 
 #showcase .showcase-content {
@@ -161,9 +186,14 @@ p {
   line-height: 1.7em;
 }
 
+#showcase img{
+width: 50% !important;
+}
+
 /* Home info */
 #home-info {
-  height: 125vh;
+  margin-top: 80px;
+  height: 100vh;
 }
 
 #home-info .info-img {
@@ -171,6 +201,11 @@ p {
   width: 50%;
   background: url(../images/img_5.jpg) center no-repeat;
   min-height: 100%;
+  animation: animate1 6s forwards 6s ease-in-out;
+}
+
+@keyframes animate1{
+  to {background: url(../images/img_4.jpg) center no-repeat;}
 }
 
 #home-info .info-content {
@@ -190,10 +225,21 @@ h2 .primary-text {
 #home-info .info-content p {
   padding-bottom: 30px;
 }
+/* animations */
+.wp-1, .wp-2{
+  opacity: 0;
+  animation-duration: 3s;
+}
+
+.wp-1 .animate__animated, .wp-2 .animate__animated {
+  opacity: 1;
+}
 
 /* features/Teachers */
 #features{
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .box {
@@ -204,7 +250,7 @@ h2 .primary-text {
   transition: all 1s ease-in-out;
 }
 .box:hover{
-  transform: translateY(50px);
+  transform: scale(1.1);
 }
 
 .box img {

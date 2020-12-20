@@ -7,11 +7,30 @@ $(document).ready(function(){
             $('nav').removeClass('sticky')
         }
     },{
-        offset: '50px;'
+        offset: '99%;'
     });
 
     // inPage scroll
     $('.scroll-to-home').click(function(){
+        $('html, body').animate({scrollTop: $('#home').offset().top}, 1000);
+    });
+    $('.scroll-to-info').click(function(){
         $('html, body').animate({scrollTop: $('#home-info').offset().top}, 1000);
-    })
+    });
+    $('.scroll-to-features').click(function(){
+        $('html, body').animate({scrollTop: $('#features').offset().top}, 1000);
+    });
+
+    $('.wp-1').waypoint(function(direction){
+        $('.wp-1').addClass('animate__animated animate__fadeInUp');
+    },{
+        offset: '50%'
+    });
+
+    $('.wp-2').waypoint(function(direction){
+        $('.wp-2').addClass('animate__animated animate__bounceIn');
+    },{
+        offset: '50%'
+    });
+
 });
