@@ -1,14 +1,21 @@
 #showcase .showcase-content {
-    padding-top: 70px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 5px;
 }
 
 #showcase .showcase-content h1, .showcase-content p {    
-    line-height: 0.9rem;
+    line-height: 0.2rem;
 }
 
 #showcase .showcase-content h1 {
-    font-size: 40px;
+    font-size: 20px;
+}
+#showcase .showcase-content p {
+    font-size: 5px;
+}
+#showcase .showcase-content .btn {
+    font-size: 7px;
+    padding: 6px 10px;
 }
 
 #showcase img{
@@ -23,6 +30,7 @@
 .navbar ul, .navbar ul li {
     float: none;
     text-align: center;
+    background: radial-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
 }
 
 .navbar ul li a {

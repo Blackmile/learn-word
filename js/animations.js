@@ -7,7 +7,7 @@ $(document).ready(function(){
             $('nav').removeClass('sticky')
         }
     },{
-        offset: '99%;'
+        offset: '85%;'
     });
 
     // inPage scroll
