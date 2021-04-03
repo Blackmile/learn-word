@@ -8,13 +8,14 @@
 }
 
 #showcase .showcase-content h1 {
-    font-size: 20px;
+    font-size: 40px;
 }
 #showcase .showcase-content p {
-    font-size: 5px;
+    text-align: center;
+    font-size: 15px;
 }
 #showcase .showcase-content .btn {
-    font-size: 7px;
+    font-size: 10px;
     padding: 6px 10px;
 }
 
