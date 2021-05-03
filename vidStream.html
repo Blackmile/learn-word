@@ -14,8 +14,6 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="css/dashboard.css">
   <link rel="stylesheet" href="css/videoPlayer.css">
-  <!-- <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
-  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
   <title>learn word procesing &mdash; Website by Stanley Eze</title>
 </head>
 
@@ -41,24 +39,19 @@
   
   <div id="video_player">
     <div class="show-stream">
-      <video id="myVideo">
+      <video id="myVideo" controls>
         <source src="./media/overview1.mp4" type="video/mp4"/>
       </video>
-      <output id="timeOut">Time: 0</output>      
-      <output id="vidNum">Video: 1/4</output>
-      <div id="playButtons">
-        <button id="btnPlay" class="btns">Play</button>
-        <button id="btnPause" class="btns">Pause</button>
-        <button id="btnStop" class="btns">Stop</button>
-      </div>
-      <div class="Next">
-        <button id="btnNext" class="btns">Next video</button>
-      </div>
     </div>
+  </div>
+  <div id="playButtons">
+    <button id="btnPlay" class="btns">Play</button>
+    <button id="btnPause" class="btns">Pause</button>
+    <button id="btnStop" class="btns">Stop</button>
+    <button id="btnNext" class="btns">Next video</button>
   </div>
   <!-- <script src="https://vjs.zencdn.net/7.8.4/video.js"></script> -->
   <script src="js/Vidstream.js"></script>
-  <script src="js/videoJs.js"></script>
   
   <script>
     // Your web app's Firebase configuration

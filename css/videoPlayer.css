@@ -1,10 +1,17 @@
 /* video section */
+* {
+    background: rgb(25, 27, 26);
+}
+
+body {
+    overflow: hidden;
+}
+
 @media only screen and (max-width: 768px) {
 #video_player {
     height: 100vh;
     object-fit: contain;
     padding: 10px;
-    background: rgb(105, 189, 144);
     color: #fff;
     position: relative;
     overflow: hidden;
@@ -16,18 +23,8 @@
     height: auto;
 }
 
-#vidNum {
-    float: right;
-}
-
 #playButtons {
-    display: flex;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-}
-.Next {
-    display: flex;
+    display: none;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -53,7 +50,7 @@ button{
 }
 
 .show-stream {
-    background: rgb(105, 189, 144);
+    background: rgb(25, 27, 26);
     padding: 60px;
     align-items: center;
     justify-content: center;
@@ -62,52 +59,27 @@ button{
 
 @media only screen and (min-width: 767px) {
     #video_player {
-        object-fit: contain;
-        padding: 60px;
-        background: rgb(105, 189, 144);
+        padding: 60px 25px;
         color: #fff;
-        position: relative;
-        overflow: hidden;
-    }
-
-    #myVideo{
-        width: 931px;
-        height: 521px;
-        left: 0.301676px;
-        top: 0px;
+        position: absolute;
+        z-index: -1;
     }
 
     #playButtons {
-        display: inline-flex;
-        padding: 10px;
+        padding: 25% 10px;
         border: none;
         border-radius: 5px;
         margin-bottom: 50px;
-    }
-
-    #vidNum {
         float: right;
     }
-    #timeOut {
-        display: grid;
-        float: left;
+    #myVideo{
+        width: 75%;
     }
-
-    .Next {
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        margin-bottom: 20px;
-        float: right;
-    }
-
-    #btnNext {
-        float: right;
-    }
-
+    
     button {
-        width: fit-content;
+        width: 100%;
     }
+
 
     .btns  {
         border: none;
@@ -115,7 +87,7 @@ button{
         color: #fff;
         padding: 0.75rem 1.5rem;
         margin-top: 1rem;
-        transition: opacity 1s ease-in-out;
+        transition: opacity 2s ease-in-out;
         text-decoration: none;
     }
     .btns:hover {

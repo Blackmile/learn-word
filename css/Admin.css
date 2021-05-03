@@ -1,0 +1,10 @@
+body{
+    background-color: #e4e0ca;
+}
+.upload{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 25%;
+}
