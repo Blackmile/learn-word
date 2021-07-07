@@ -43,7 +43,7 @@
             <li><a class="scroll-to-features">Teachers</a></li>
             <li><a class="scroll-to-home">Courses</a></li>
             <li><a class="scroll-to-home">Contact Us</a></li>
-            <li><a onclick="googleSignIn()">Login</a></li>
+            <li><a onclick="logIn()">Login</a></li>
           </ul>
         </div>        
         
@@ -54,73 +54,20 @@
   <div class="clr"></div>
   <section id="home">
     <div id="showcase">
-      <div class="container container-fluid">
-        <div id="carousel-showcase" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-bs-target="#carousel-showcase" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carousel-showcase" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carousel-showcase" data-bs-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="/images/slide_1.jpg" class="d-block w-100 img-fluid" alt="...">
-              <div class="carousel-caption d-block showcase-content">
-                <h1 class="primary-text">WELCOME</h1>
-                <p class="content">learn word processing the easy... Lorem ipsum dolor, sit amet consectetur adipisicing
-                  elit. Sit explicabo at
-                  cum quisquam minus illo quo veniam quis similique, ut ipsum ratione minima commodi placeat laudantium
-                  mollitia
-                  ullam eum tenetur...
-                  <em>And be an expert in it</em>.
-                </p>
-                <a class="btn" onclick="googleSignIn()">Enroll Now</a>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="/images/slide_2.jpg" class="d-block w-100 img-fluid" alt="...">
-              <div class="carousel-caption d-block showcase-content">
-                <h1 class="primary-text">WELCOME</h1>
-                <p class="content">learn word processing the easy... Lorem ipsum dolor, sit amet consectetur adipisicing
-                  elit. Sit explicabo at
-                  cum quisquam minus illo quo veniam quis similique, ut ipsum ratione minima commodi placeat laudantium
-                  mollitia
-                  ullam eum tenetur...
-                  <em>And be an expert in it</em>.
-                </p>
-                <a class="btn" onclick="googleSignIn()">Enroll Now</a>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="/images/slide_3.jpg" class="d-block w-100 img-fluid" alt="...">
-              <div class="carousel-caption d-block showcase-content">
-                <h1 class="primary-text">WELCOME</h1>
-                <p class="content">learn word processing the easy... Lorem ipsum dolor, sit amet consectetur adipisicing
-                  elit. Sit explicabo at
-                  cum quisquam minus illo quo veniam quis similique, ut ipsum ratione minima commodi placeat laudantium
-                  mollitia
-                  ullam eum tenetur...
-                  <em>And be an expert in it</em>.
-                </p>
-                <a class="btn btn-light" onclick="googleSignIn()">Enroll Now</a>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carousel-showcase" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carousel-showcase" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
-        </div>
-        <div class="showcase-content">
-
-        </div>
+      <div class="container showcase-container">
+        <h1 class="primary-text">WELCOME</h1>
+        <p class="content">learn word processing the easy... Lorem ipsum dolor, sit amet consectetur adipisicing
+          elit. Sit explicabo at
+          cum quisquam minus illo quo veniam quis similique, ut ipsum ratione minima commodi placeat laudantium
+          mollitia
+          ullam eum tenetur...
+          <em>And be an expert in it</em>.
+          </p>
+        <a class="btn" onclick="googleSignIn()">Enroll Now</a>
       </div>
     </div>
-  </section>
-  <div class="clr"></div>
+  </section> 
+  <!-- come back and refactor this^^^^^ -->
 
   <section id="home-info" class="bg-dark wp-1">
     <div class="info-img"></div>
@@ -131,7 +78,7 @@
         nisi repudiandae. Dignissimos minus nulla consequuntur excepturi, tempora corrupti architecto error cum quaerat
         nesciunt libero mollitia voluptates doloribus accusantium earum alias temporibus illum dolore?
       </p>
-      <a href="about.html" class="btn btn-light">Read more</a>
+      <a onclick="about()" class="btn btn-light">Read more</a>
     </div>
   </section>
 
@@ -140,7 +87,7 @@
   <section id="features" class="wp-2">
     <div class="box bg-light">
       <img src="./images/person_1.jpg" alt="Stanley Ifeanyi" class="avatar img-thumbnail">
-      <h3>Dr. Stanley Eze</h3>
+      <h3><a onclick="about()">About</a></h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, incidunt facilis. Laborum aspernatur molestiae
         magnam!
@@ -148,7 +95,7 @@
     </div>
     <div class="box bg-primary">
       <img src="./images/person_2.jpg" alt="Stanley Ifeanyi" class="avatar img-thumbnail">
-      <h3>Dr. Dim Dera</h3>
+      <h3><a onclick="about()">Courses</a></h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, incidunt facilis. Laborum aspernatur molestiae
         magnam!
@@ -156,7 +103,7 @@
     </div>
     <div class="box bg-light">
       <img src="./images/person_3.jpg" alt="Stanley Ifeanyi" class="avatar img-thumbnail">
-      <h3>Mr Sponge bob</h3>
+      <h3><a onclick="about()">Contact Us</a></h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, incidunt facilis. Laborum aspernatur molestiae
         magnam!
@@ -195,6 +142,7 @@
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/animations.js"></script>
   <script src="../js/index.js"></script>
+  <script src="/js/decider.js"></script>
 </body>
 
 </html>

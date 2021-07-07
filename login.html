@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="learning word processing is way easier to understanding in practice over theories">
+        <meta name="keywords" content="word processing, Ms word">
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+      
+        <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+      
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <link href="css/style.css" rel="stylesheet" media="all">
+        <link href="css/mobile.css" rel="stylesheet" media="screen and (max-width: 768px)">
+        <link rel="stylesheet" href="Stylesheet.css">
+        <title>Login</title>
+    </head>
+<body>
+    <div class="login">
+        <div class="container_form">
+            <form class="form" onsubmit="signInWithEmailPassword(event)">
+                <input type="email" name="email" id="email" placeholder="Enter Email">
+                <input type="password" name="password" id="password" placeholder="Enter Password">
+                <button type="submit">Teacher</button>
+            </form>
+            <form class="form form2">
+              <input type="email" name="email" id="email" placeholder="Enter Email">
+              <input type="password" name="password" id="password" placeholder="Enter Password">
+              <button onclick="signInWithEmailPassword(event)">Student</button>
+              <hr/>
+              <button onclick="googleSignIn()">Google SignIn</button>
+            </form>
+        </div>
+    </div>
+      <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyB4rtE6PMqXs2OItW1-uFLE9Ra81tQ0HFM",
+          authDomain: "reformed-b521d.firebaseapp.com",
+          databaseURL: "https://reformed-b521d.firebaseio.com",
+          projectId: "reformed-b521d",
+          storageBucket: "reformed-b521d.appspot.com",
+          messagingSenderId: "1092837700617",
+          appId: "1:1092837700617:web:388e6bbc08a2efc48bf4d8",
+          measurementId: "G-KR13PRXJPW"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+        <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/animations.js"></script>
+      <script src="js/index.js"></script>
+      <script src="js/decider.js"></script>
+</body>
+</html>

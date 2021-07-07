@@ -7,50 +7,70 @@ body {
     overflow: hidden;
 }
 
-@media only screen and (max-width: 768px) {
-#video_player {
-    padding: 10px;
+.test {
+    display: grid;
+    margin-right: 20pt;
     color: #fff;
-    position: absolute;
+    position: relative;
+    float: right;    
 }
 
-
-#myVideo{
-    width: 100%;
-}
-
-#playButtons {
-    display: none;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-button{
-    width: 50em;
-}
-
-.btns  {
-    border: none;
+.test a {
     background: var(--secondary-color);
     color: #fff;
-    padding: 0.75rem 1.5rem;
-    margin-top: 1rem;
-    transition: opacity 1s ease-in-out;
     text-decoration: none;
-}
-.btns:hover {
-    background: #f7c08a;
-    color: #003c4d;
     cursor: pointer;
+    animation: animate2 6s forwards 6s ease-in-out infinite;
 }
 
-.show-stream {
-    background: rgb(25, 27, 26);
-    padding: 60px;
-    align-items: center;
-    justify-content: center;
-}
+@keyframes animate2{
+    to {background: #003c4d;}
+  }
+
+@media only screen and (max-width: 768px) {
+    #video_player {
+        padding: 10px;
+        color: #fff;
+        position: absolute;
+    }
+
+    #myVideo{
+        width: 100%;
+    }
+
+    #playButtons {
+        display: none;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    button{
+        width: 50em;
+    }
+
+    .btns  {
+        border: none;
+        background: var(--secondary-color);
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        margin-top: 1rem;
+        transition: opacity 1s ease-in-out;
+        text-decoration: none;
+    }
+
+    .btns:hover {
+        background: #f7c08a;
+        color: #003c4d;
+        cursor: pointer;
+    }
+
+    .show-stream {
+        background: rgb(25, 27, 26);
+        padding: 60px;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media only screen and (min-width: 767px) {

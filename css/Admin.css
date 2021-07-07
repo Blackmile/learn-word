@@ -1,10 +1,33 @@
 body{
+    box-sizing: border-box;
     background-color: #e4e0ca;
+    color: #fff;
 }
+
 .upload{
     text-align: center;
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-top: 25%;
+    background: #003B1C;
+    width: 500px;
+    height: 300px;
+    margin-top: 15%;
+}
+
+input{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.upload:hover{
+    background: #fff;
+    color: black;
+}
+
+textarea{
+    border: none;
+    padding: 50px;
 }

@@ -1,3 +1,4 @@
+
 const myVideo = document.getElementById('myVideo');
 const btnPlay = document.getElementById('btnPlay');
 const btnPause = document.getElementById('btnPause');
