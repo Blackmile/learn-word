@@ -1,4 +1,5 @@
-function googleSignIn() {
+function googleSignIn(e) {
+  e.preventDefault();
   var provider = new firebase.auth.GoogleAuthProvider();
 
   firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
@@ -19,7 +20,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
     console.log("true");
-    window.location.assign("../landing_page.html")
+    window.location.assign("vidStream.html")
   } else {
     // No user is signed in.
     console.log("false");
@@ -53,10 +54,10 @@ firebase.auth().onAuthStateChanged(function(user) {
   console.log("clicked");
 }
 
-function signInWithEmailPassword(e) {
+function signInWithEmailPassword2(e) {
   e.preventDefault();
-  var email = document.getElementById("email").value;
-  var password = document.getElementById("password").value;
+  var email = document.getElementById("email2").value;
+  var password = document.getElementById("password2").value;
   console.log(email, password);
   // [START auth_signin_password]
   firebase.auth().signInWithEmailAndPassword(email, password)
