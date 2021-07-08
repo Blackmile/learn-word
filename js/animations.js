@@ -12,7 +12,7 @@ $(document).ready(function(){
 
     // inPage scroll
     $('.scroll-to-home').click(function(){
-        $('html, body').animate({scrollTop: $('#home').offset().top}, 1000);
+        $('html, body').animate({scrollTop: $('#showcase').offset().top}, 1000);
     });
     $('.scroll-to-info').click(function(){
         $('html, body').animate({scrollTop: $('#home-info').offset().top}, 1000);

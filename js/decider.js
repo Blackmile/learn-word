@@ -1,15 +1,22 @@
-function logIn() {
+function logIn(e) {
+  e.preventDefault();
   window.location.assign("login.html");
 }
-function about() {
+function about(e) {
+  e.preventDefault();
   window.location.assign("about.html");
 }
-function test() {
+function test(e) {
+  e.preventDefault();
   window.location.assign("test.html");
 }
-function home(e) {
-  e.preventDefault
+function vids(e) {
+  e.preventDefault();
   window.location.assign("vidStream.html");
+}
+function home(e) {
+  e.preventDefault();
+  window.location.assign("index.html");
 }
 
 function signInWithEmailPassword(e) {

@@ -4,6 +4,3 @@ let user_name = firebase.database().ref('user/' + id).on('value', function(snaps
     document.querySelector(".points").innerHTML = snapshot.val().points;
     document.querySelector(".time").innerHTML = snapshot.val().Time;
 }); 
-
-
-
