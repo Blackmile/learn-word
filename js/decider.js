@@ -7,6 +7,10 @@ function about() {
 function test() {
   window.location.assign("test.html");
 }
+function home(e) {
+  e.preventDefault
+  window.location.assign("vidStream.html");
+}
 
 function signInWithEmailPassword(e) {
     e.preventDefault();

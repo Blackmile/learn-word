@@ -145,6 +145,16 @@ body {
     justify-content: center;
 }
 
+.btn {
+    font-size: 18px;
+    color: #fff;
+    background: #003c4d;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+    float: right;
+  }
+
 .user-name,
 .user-points,
 .user-time {
