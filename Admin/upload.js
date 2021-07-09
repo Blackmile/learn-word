@@ -19,3 +19,16 @@ fileButton.addEventListener('click', function(e){
         }
     })
 });
+
+
+function googleSignout() {
+  
+    firebase.auth().signOut().then(function() {
+      // Sign-out successful.
+      console.log('signed out');
+      window.location.assign('/index.html')
+    }).catch(function(error) {
+      // An error happened.
+      console.log('error');
+    });
+  };
