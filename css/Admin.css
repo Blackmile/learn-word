@@ -31,3 +31,14 @@ textarea{
     border: none;
     padding: 50px;
 }
+
+.btn {
+    margin: -12% 1%;
+    font-size: 10px;
+    color: #fff;
+    background: #961701c4;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    float: right;
+  }
