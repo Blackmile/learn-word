@@ -166,29 +166,29 @@ p {
 /* Showcase */
 #showcase {
   margin-bottom: auto;
-  /* height: 600px; */
+  height: 600px;
 }
 
-#showcase .showcase-content {
+#showcase .showcase-container {
   color: #fff;
   text-align: center;
-  /* padding-top: 170px; */
+  padding-top: 170px;
 }
 
-#showcase .showcase-content h1 {
+#showcase .showcase-container h1 {
   font-size: 40px;
   line-height: 1.2em;
   /* color: #f7c08a; */
 }
 
-#showcase .showcase-content p {
+#showcase .showcase-container p {
   /* background-color: rgba(58, 62, 65, 0.678); */
   text-align: justify;
   padding-bottom: 20px;
   line-height: 1.5em;
 }
 
-#showcase .showcase-content a {
+#showcase .showcase-container a {
   align-self: center;
 }
 #showcase img{
