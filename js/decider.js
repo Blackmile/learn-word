@@ -19,6 +19,12 @@ function home(e) {
   window.location.assign("index.html");
 }
 
+function open(e) {
+  e.preventDefault();
+  console.log("clicked!!")
+  window.open('trial.docx');
+}
+
 function signInWithEmailPassword(e) {
     e.preventDefault();
     var email = document.getElementById("email").value;

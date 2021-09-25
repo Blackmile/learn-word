@@ -34,6 +34,14 @@ p {
   padding: 0 10px;
 }
 
+.center{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 15%;
+}
+
 .primary-text {
   color: #003c4d;
 }
@@ -398,4 +406,9 @@ h2 .primary-text {
   background: #444;
   color: #fff;
   padding: 20px;
+}
+
+.remove{
+  text-decoration: none;
+  color: #333 !important;
 }
